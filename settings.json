@@ -1,0 +1,101 @@
+{
+  // 编辑器基础设置
+  "editor.fontSize": 14, // 设置编辑器字体大小
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "all",
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true, // 保存时自动格式化
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 默认格式化工具为 Prettier
+  //   "files.autoSave": "onFocusChange", //失去焦点后自动保存
+
+  // 代码风格设置 （配置 Prettier 选项）
+  "prettier.semi": true, // 强制加分号
+  "prettier.singleQuote": true, // 使用单引号
+  "prettier.trailingComma": "es5", // 对象和数组末尾加逗号
+  "prettier.printWidth": 80, // 每行最大字符数
+  "prettier.tabWidth": 2, // 缩进宽度
+
+  // 设置 Prettier为ESLint的格式化工具
+  // ESLint 设置
+  "eslint.enable": true, // 启用 ESLint
+  "eslint.format.enable": true, // 使用 ESLint 格式化
+  "editor.codeActionsOnSave": [
+    "source.fixAll.eslint" // 保存时自动修复 ESLint 错误
+  ],
+
+  // Emmet 设置
+  "emmet.triggerExpansionOnTab": true, // 按 Tab 键触发 Emmet 补全
+  "emmet.syntaxProfiles": {}, // Emmet 的语法配置文件
+  "emmet.preferences": {}, //  Emmet 的偏好设置
+
+  // 文件关联
+  "files.associations": {
+    "*.vue": "html" // 将 .vue 文件关联为 HTML
+  },
+
+  // 主题和外观
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "window.customTitleBarVisibility": "never",
+  "window.titleBarStyle": "native",
+
+  // 搜索排除 以下文件
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/target": true,
+    "**/logs": true
+  },
+
+  // 其他设置
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.unicodeHighlight.allowedLocales": {
+    // 允许 Unicode 高亮显示简体中文
+    "zh-hans": true
+  },
+  "settingsSync.ignoredExtensions": [], // 同步设置时忽略的扩展
+  "settingsSync.ignoredSettings": [], // 同步设置时忽略的设置
+  "window.doubleClickIconToClose": true, // 双击图标关闭窗口
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "", // Live Server 的自定义浏览器命令行
+  "json.schemas": [], // JSON 文件的模式配置
+
+  // 设置文件类型的格式化工具
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Vue 相关设置
+  "vetur.format.defaultFormatter.html": "prettier",
+  "vetur.format.defaultFormatter.js": "prettier",
+  "vetur.format.defaultFormatter.ts": "prettier",
+  "vetur.format.defaultFormatter.css": "prettier",
+  "vetur.format.defaultFormatter.scss": "prettier",
+  "vetur.format.defaultFormatter.less": "prettier",
+  "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+  "vetur.format.defaultFormatter.postcss": "prettier"
+  //   "vetur.format.defaultFormatter.js": "prettier-eslint",
+  //   "vetur.format.defaultFormatter.ts": "prettier-eslint"
+}
